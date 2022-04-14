@@ -6,6 +6,6 @@ app.listen(
 
 app.get('/api/account/customer', async function (req,res) {
 
-  res.status(418).send({firstName: 'Sandy'})
+  res.status(418).send({firstName: 'Sandy'},{lastName: 'Gould'})
 
 });
