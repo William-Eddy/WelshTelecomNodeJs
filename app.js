@@ -5,7 +5,5 @@ app.listen(
 )
 
 app.get('/api/account/customer', async function (req,res) {
-
-  res.status(418).send({firstName: 'Sandy', lastName: 'Gould'})
-
+  res.status(418).send({firstName: 'Sandy', lastName: 'Gould', accountNumber: '13294319', accountNumber: '07896783746'})
 });
