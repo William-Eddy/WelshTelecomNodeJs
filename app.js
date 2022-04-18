@@ -4,6 +4,10 @@ app.listen(
   () => console.log('Server running...')
 )
 
+app.get('/', async function (req,res) {
+  res.status(200).send({message: 'Welcome to Welsh Telecom API'})
+});
+
 app.get('/api/account/customer', async function (req,res) {
   res.status(200).send({firstName: 'Sandy', lastName: 'Gould', accountNumber: '13294319', accountNumber: '07896783746'})
 });
